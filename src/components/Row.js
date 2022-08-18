@@ -20,7 +20,9 @@ const Row = ({ title, fetchUrl, id, isLargeRow }) => {
       <h2>{title}</h2>
       <div className="slider">
         <div className="slider_arrow-left">
-          <sapn className="arrow">{"<"}</sapn>
+          <sapn className="arrow" onClick={() => {}}>
+            {"<"}
+          </sapn>
         </div>
         <div id={id} className="row_posters">
           {movies.map((movie) => (
